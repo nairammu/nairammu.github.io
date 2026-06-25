@@ -4,6 +4,5 @@
 </head>
 
 <header>
-  <title> My Personal Website</title>
   <h1>my personal website</h1>
 </header>
