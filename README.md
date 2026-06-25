@@ -1,6 +1,4 @@
 # ammunair.github.io
-my personal website
-testing testing 123
 <head>
   <meta charset="UTF-8">
 </head>
