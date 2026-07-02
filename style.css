@@ -1,0 +1,64 @@
+
+header{
+  background-color: #44576d;
+  margin-top: 20px;
+  color: black
+  
+  
+}
+
+.margin{
+  margin-top: -25px;
+  color: black
+}
+
+
+
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #aac7d8;
+  
+}
+p{
+  text-align: center;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a:hover{
+  color: #44576d
+  
+}
+
+a{
+  color: #29353c;
+}
+
+a:visited{
+  color: #768A96
+}
+
+h2, p{
+  color: #29353c;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+
