@@ -6,38 +6,54 @@
     <link href="style.css" rel="stylesheet"/>
     <title>Ammu's Portfolio</title>
   </head>
-<!--- header -->
-  <header>
-    <h1>Ammu's Portfolio</h1>
-    <p class="margin"> this website will display my projects, resume, LinkedIn</p>
-  </header>
+  
 
 <!-- Main Content -->
   <div>
     <body>
+      <header>
+        <h1>Ammu's Portfolio</h1>
+        <p class="h-margin"> this website will display my projects, resume, LinkedIn</p>
+      </header>
       <main> 
         <div class="about-me"> 
           <h2>About Me</h2>
             <img src="nair_ammu_photo.jpeg" alt="an image of myself in a brightly lit room">
-            <p>
+            <p id="about-me-p">
               Hi I'm Ammu Nair! I'm a 19 year old rising sophmore at Georgia Tech with experience in Python, HTML, and CSS. I was born in Kerela, India before immigrating to the U.S at four years old. I have lived
-              in at least three states and one island before finally settling in Georgia. My favorite hobbies include scrapbooking, bedazzling, traveling, and going to the gym. I also enjoy drinking
-              milktea and eating a slice of cheesecake!
+              in at least three states and one island before finally settling in Georgia. My favorite hobbies include scrapbooking, bedazzling, traveling, and going to the gym. I also enjoy some good
+              milktea and a slice of cheesecake.
             </p>
             
-            <p class="button"> 
+            <p class="about-me-button"> 
                 <a href="https://www.linkedin.com/in/ammu-nair-b477382a3/" target="_blank">
                   LinkedIn
                 </a>
             </p>
             
-            <p class="button">
+            <p class="about-me-button">
               <a href="A.Nair.single_page_resume.pdf" target="_blank">
                   Resume
               </a>
             </p>
         </div>
+
+        <div class="projects">
+          <h2>Projects</h2>
+            <div class="hackhers">
+              <section>
+                <h3>Hackhers 2025: Remi</h3>
+                  <p id="hackhers-desc">
+                    At Hackhers 2025 hackathon, my team and I designed Remi, which is a digital health app concept and UI/UX prototype built using Figma and Canva, 
+                    engineered to assist Alzheimer's patients with real-time recognition of family members and visitors.
+                  </p>
+                  <a class="projects-button" href="https://www.figma.com/proto/k65LSRExluvtPsOsNu9Gze/Remi?node-id=30-365&t=VpbIA5m5XfbeDq4B-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A418" target="_blank">figma prototype</a>
+                  <a class="projects-button" href="https://canva.link/weos9acfe8kt5l3" target="_blank">Canva Demo Presentation</a>
+              </section> 
+            </div>
+        </div>
       </main>
+      
       <!--footer-->
         <footer>
         <h2> Contact </h2> 
