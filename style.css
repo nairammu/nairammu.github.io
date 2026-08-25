@@ -1,10 +1,46 @@
-
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 header{
   margin-top: 10px;
   color: #e6e6e6;
   background: linear-gradient(to right, #29353c,#44576d, #768A96 );
   border: outset;
+  position: sticky;
+  top: 0;
   
+  
+}
+
+.h-margin{
+  margin-top: -25px;
+
+  
+}
+
+nav ul{
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  
+  
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: underline;
+  
+}
+nav ul li a:hover{
+  color: gray;
+  text-decoration: underline;
   
 }
 
@@ -83,11 +119,7 @@ p{
   margin-left: auto;
 }
 
-.h-margin{
-  margin-top: -25px;
-  color: #e6e6e6
-  
-}
+
 
 
 .hackhers{
@@ -119,7 +151,9 @@ p{
   margin-left: auto;
   width: 200px;
   box-shadow: 0 5px 5px black;
-  transition: transform 0.3s, background-color 0.3s ease;
+  transition: transform 0.3s, color 0.3s ease;
+  margin-bottom: 20px;
+  color: #44576d;
 
 }
 
@@ -170,11 +204,32 @@ p{
 
 a{
   text-decoration: none;
-  color: #44576d
+  color: #e6e6e6;
 }
 
-#email:hover{
-  color: #e6e6e6;
+
+
+footer{
+  margin-top: 30px;
+  background-color: #768A96;
+  border: solid, #29353c, 5px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 30px;
+}
+
+footer p:nth-of-type(2) a{
+  color: #394247;
+}
+
+footer p:nth-of-type(2) a:hover{
+  color: #44576d;
+}
+
+footer a:hover{
+  color: #44576d;
+  text-decoration: underline;
+
 }
 
 
