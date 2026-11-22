@@ -1,76 +1,127 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet"/>
-    <title>Ammu's Portfolio</title>
-  </head>
-  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Ammu's Portfolio</title>
+</head>
 
-<!-- Main Content -->
-  <div>
-    <body>
-      <header>
-        <h1>Ammu's Portfolio</h1>
-        <nav>
-          <ul class="h-margin">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <!--<span><a href="#website-details">Website Details</a></span>-->
-          </div>
-        </nav>
-        
-      </header>
-      <main> 
-        <div class="about-me"> 
-          <h2 id="about-me">About Me</h2>
-            <img src="nair_ammu_photo.jpeg" alt="an image of myself in a brightly lit room">
-            <p id="about-me-p">
-              Hi I'm Ammu Nair! I'm a 19 year old rising sophmore at Georgia Tech with experience in Python, HTML, and CSS. 
-              I was born in Kerela, India, before immigrating to the U.S at four years old.
-               I have lived in at least three states and one island before finally settling in Georgia. My favorite hobbies include scrapbooking, bedazzling, traveling, and going to the gym. I also enjoy some good milktea and a slice of cheesecake.
-            </p>
-            
-            <a class="about-me-button" href="https://github.com/nairammu" target="_blank">
-              Github
-            </a>
-      
-            <a class="about-me-button" href="A.Nair.single_page_resume.pdf" target="_blank">
-              Resume
-            </a>
-            
-        </div>
+<body>
 
-        <div class="projects" id="projects">
-          <h2>Projects</h2>
-            <section class="hackhers">
-              <h3>Hackhers 2025: Remi</h3>
-                <p id="hackhers-desc">
-                  At Hackhers 2025 hackathon, my team and I designed Remi, which is a digital health app concept and UI/UX prototype built using Figma and Canva, 
-                  engineered to assist Alzheimer's patients with real-time recognition of family members and visitors.
-                </p>
-                <a class="projects-button" href="https://www.figma.com/proto/k65LSRExluvtPsOsNu9Gze/Remi?node-id=30-365&t=VpbIA5m5XfbeDq4B-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A418" target="_blank">figma prototype</a>
-                <a class="projects-button" href="https://canva.link/weos9acfe8kt5l3" target="_blank">Canva Demo Presentation</a>
-            </section> 
-            
+  <!-- Header -->
+  <header>
+    <h1>Ammu's Portfolio</h1>
+  </header>
 
-            
-        </div>
-      </main>
-      
-      <!--footer-->
-      <footer>
-        <h2> Contacts </h2> 
-          <p>
-              Email:<a href="mailto:nairammu46@gmail.com" id="email"> nairammu46@gmail.com</a>
-          </p>
+  <!-- Main Content -->
+  <main class="main-layout">
 
-           <p>
-              <a href="https://www.linkedin.com/in/ammu-nair-b477382a3/" id="linkedin" target="_blank"> LinkedIn</a>
-          </p>
-      </footer>
-      
-    </body>
+    <!-- About Me -->
+    <div class="about-me" id="about-me">
+      <h2>About Me</h2>
+
+      <img src="nair_ammu_photo.jpeg"
+           alt="an image of myself in a brightly lit room">
+
+      <p id="about-me-p">
+        Hi I'm Ammu Nair! I'm a 19 year old rising sophmore at Georgia Tech with experience in Python, HTML, and CSS.
+        I was born in Kerela, India, before immigrating to the U.S at four years old.
+        I have lived in at least three states and one island before finally settling in Georgia.
+        My favorite hobbies include scrapbooking, bedazzling, traveling, and going to the gym.
+        I also enjoy some good milktea and a slice of cheesecake.
+      </p>
+
+      <div class="about-me-links">
+        <a class="about-me-button"
+           href="https://github.com/nairammu"
+           target="_blank">
+          Github
+        </a>
+
+        <a class="about-me-button"
+           href="A.Nair.single_page_resume.pdf"
+           target="_blank">
+          Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+      <h2>Projects</h2>
+
+      <section class="hackhers">
+        <h3>Hackhers 2025: Remi</h3>
+
+        <p id="hackhers-desc">
+          At Hackhers 2025 hackathon, my team and I designed Remi,
+          which is a digital health app concept and UI/UX prototype
+          built using Figma and Canva, engineered to assist
+          Alzheimer's patients with real-time recognition of
+          family members and visitors.
+        </p>
+
+        <a class="projects-button"
+           href="https://www.figma.com/proto/k65LSRExluvtPsOsNu9Gze/Remi?node-id=30-365&t=VpbIA5m5XfbeDq4B-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A418"
+           target="_blank">
+          figma prototype
+        </a>
+
+        <a class="projects-button"
+           href="https://canva.link/weos9acfe8kt5l3"
+           target="_blank">
+          Canva Demo Presentation
+        </a>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Case Study -->
+  <div class="case-study" id="case-study">
+    <h2>Case Study</h2>
+
+    <div class="case-study-content">
+      <h3>PeerPath</h3>
+
+      <p>
+        This case study explores the challenges high school students
+        face when choosing a college major and how those findings
+        led to the design of PeerPath, a conceptual app that connects
+        high school students with college students for firsthand
+        insights into specific majors and universities. PeerPath
+        is a UI/UX design prototype and has not been developed
+        into a functional, coded application.
+      </p>
+
+      <a class="projects-button" href="#" target="_blank">
+        View Case Study
+      </a>
+
+    </div>
   </div>
+
+  <!-- Footer -->
+  <footer id="contacts">
+    <h2>Contacts</h2>
+
+    <p>
+      Email:
+      <a href="mailto:nairammu46@gmail.com" id="email">
+        nairammu46@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <a href="https://www.linkedin.com/in/ammu-nair-b477382a3/"
+         id="linkedin"
+         target="_blank">
+        LinkedIn
+      </a>
+    </p>
+  </footer>
+
+</body>
 </html>

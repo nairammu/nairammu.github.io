@@ -1,117 +1,86 @@
-*{
+
+* {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-header{
-  margin-top: 10px;
-  color: #e6e6e6;
-  background: linear-gradient(to right, #29353c,#44576d, #768A96 );
-  border: outset;
-  position: sticky;
-  top: 0;
-  
-  
-}
 
-.h-margin{
-  margin-top: -25px;
-
-  
-}
-
-nav ul{
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
-  
-  
-}
-
-nav ul li{
-  display: inline-block;
-  margin-right: 20px;
-  text-decoration: underline;
-  
-}
-nav ul li a:hover{
-  color: gray;
-  text-decoration: underline;
-  
-}
-
-h1{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h2{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h2, p{
-  color: #29353c;
-}
-
-body{
+body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #aac7d8;
-  
+}
+
+/* Header */
+
+header {
+  margin: 20px auto 0;
+  width: 95%;
+  color: #e6e6e6;
+  background: linear-gradient(to right, #29353c, #44576d, #768A96);
+  border: outset;
+  padding: 20px;
+
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2, p {
+  color: #29353c;
+}
+
+p {
+  text-align: center;
+}
+
+.h-margin {
+  margin-top: 0;
 }
 
 
+/* Main Layout */
 
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  width: 95%;
+  margin: 25px auto;
+  align-items: stretch;
+}
 
-img{
+/* About Me */
+
+.about-me {
+  text-align: center;
+  background-color: #768A96;
+  padding: 20px;
+  border: solid #29353c 5px;
+  min-width: 0;
+  scroll-margin-top: 160px;
+}
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 300px;
-  border: solid, 10px, #44576d;
+  max-width: 100%;
+  border: solid 10px #44576d;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px #111618;
 }
 
-p{
-  text-align: center;
-}
-
-.about-me{
-  text-align: center;
-  max-width: 800px;
-  background-color: #768A96;
-  margin: auto;
-  padding: 10px;
-  margin-top: 30px;
-  border: solid, #29353c, 5px;
-  /*box-shadow: 0 4px 8px #29353c ;*/
-  
-}
-
-.projects{
-  text-align: center;
-  max-width: 1000px;
-  background-color: #768A96;
-  margin: auto;
-  padding: 10px;
-  margin-top: 30px;
-  border: solid, #29353c, 5px;
-  /*box-shadow: 0 4px 8px #29353c ;*/
-
-}
-
-
-
-
-#about-me-p{
+#about-me-p {
   width: auto;
   max-width: 800px;
   text-align: center;
@@ -119,7 +88,45 @@ p{
   margin-left: auto;
 }
 
+/* About Me Buttons */
 
+.about-me-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.about-me-button {
+  background: linear-gradient(180deg, #e6e6e6, #8a8a8a);
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 5px 5px black;
+  transition: transform 0.3s, color 0.3s ease;
+  margin-bottom: 20px;
+  color: #44576d;
+}
+
+.about-me-button:hover {
+  background: linear-gradient(#29353c, #111618);
+  color: #e6e6e6;
+  transform: scale(1.3);
+}
+
+/* Projects */
+
+.projects {
+  text-align: center;
+  background-color: #768A96;
+  padding: 20px;
+  border: solid #29353c 5px;
+  min-width: 0;
+  scroll-margin-top: 160px;
+}
 
 
 .hackhers{
@@ -130,107 +137,120 @@ p{
   margin-top: 30px;
   border-top: solid,#29353c,10px;
   color: #aac7d8;
-  
 }
 
 #hackhers-desc{
   text-align: left;
   color: #aac7d8;
-
 }
 
-.about-me-button{
-  background: linear-gradient(180deg,#e6e6e6, #8a8a8a);;
-  display: inline-block;
-  border-radius: 20px;
-  text-align: center;
-  padding: 10px;
-  width: auto;
-  text-align: center;
-  margin-right: 32px;
-  margin-left: auto;
-  width: 200px;
-  box-shadow: 0 5px 5px black;
-  transition: transform 0.3s, color 0.3s ease;
-  margin-bottom: 20px;
-  color: #44576d;
 
-}
+/* Project Buttons */
 
-.about-me-button:hover{
-  background: linear-gradient(#29353c,#111618);
-  color: #e6e6e6;
-  transform: scale(1.3);
-  
-  
-}
-
-/*.about-me-button:active{
-  color: #29353c;
-}*/
-
-.projects-button{
-  background: linear-gradient(#768A96,#394247) ;
+.projects-button {
+  background: linear-gradient(#768A96, #394247);
   display: inline-block;
   border-radius: 30px;
-  text-align: left;
   padding: 5px;
-  width: auto;
+  width: 200px;
+  max-width: 100%;
   text-align: center;
   margin-right: 32px;
   margin-left: auto;
-  width: 200px;
+  margin-bottom: 15px;
   box-shadow: 0 5px 5px black;
   color: #e6e6e6;
   transition: transform 0.3s, background-color 0.3s ease;
-  
 }
 
-.projects-button:hover{
-  background: linear-gradient(#29353c,#111618);
+.projects-button:hover {
+  background: linear-gradient(#29353c, #111618);
   color: white;
   transform: scale(1.3);
 }
 
+/* Links */
 
-
-#email:visited{
-  color: #768A96
-}
-
-
-
-
-
-a{
+a {
   text-decoration: none;
   color: #e6e6e6;
 }
 
+/* Footer */
 
-
-footer{
-  margin-top: 30px;
+footer {
+  width: 95%;
+  margin: 0 auto 30px;
+  padding: 10px;
   background-color: #768A96;
-  border: solid, #29353c, 5px;
-  border-left: none;
-  border-right: none;
-  margin-bottom: 30px;
+  border: solid #29353c 5px;
+  text-align: center;
 }
 
-footer p:nth-of-type(2) a{
+#email:visited {
+  color: #768A96;
+}
+
+footer p:nth-of-type(2) a {
   color: #394247;
 }
 
-footer p:nth-of-type(2) a:hover{
+footer p:nth-of-type(2) a:hover {
   color: #44576d;
 }
 
-footer a:hover{
+footer a:hover {
   color: #44576d;
   text-decoration: underline;
-
 }
 
 
+
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me,
+  .projects {
+    width: 100%;
+  }
+
+  .about-me-button,
+  .projects-button {
+    margin-right: 0;
+  }
+}
+
+
+/* Case Study Section */
+
+
+/* Case Study Section */
+
+
+/* Case Study Section */
+
+.case-study {
+  text-align: center;
+  width: 95%;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #768A96;
+  border: solid #29353c 5px;
+}
+
+.case-study-content {
+  text-align: left;
+  max-width: 100%;
+  background-color: #44576d;
+  padding: 10px;
+  margin-top: 30px;
+  color: #aac7d8;
+}
+
+.case-study-content p {
+  text-align: left;
+  color: #aac7d8;
+}
 
