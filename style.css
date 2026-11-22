@@ -4,8 +4,11 @@
   scroll-behavior: smooth;
 }
 
+/* Body */
+
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -21,7 +24,6 @@ header {
   background: linear-gradient(to right, #29353c, #44576d, #768A96);
   border: outset;
   padding: 20px;
-
 }
 
 h1 {
@@ -42,11 +44,6 @@ p {
   text-align: center;
 }
 
-.h-margin {
-  margin-top: 0;
-}
-
-
 /* Main Layout */
 
 .main-layout {
@@ -66,7 +63,6 @@ p {
   padding: 20px;
   border: solid #29353c 5px;
   min-width: 0;
-  scroll-margin-top: 160px;
 }
 
 img {
@@ -101,10 +97,10 @@ img {
   background: linear-gradient(180deg, #e6e6e6, #8a8a8a);
   display: inline-block;
   border-radius: 20px;
+  text-align: center;
   padding: 10px;
   width: 200px;
   max-width: 100%;
-  text-align: center;
   box-shadow: 0 5px 5px black;
   transition: transform 0.3s, color 0.3s ease;
   margin-bottom: 20px;
@@ -125,25 +121,24 @@ img {
   padding: 20px;
   border: solid #29353c 5px;
   min-width: 0;
-  scroll-margin-top: 160px;
 }
 
+/* Individual Project */
 
-.hackhers{
+.hackhers {
   text-align: left;
   max-width: 100%;
   background-color: #44576d;
   padding: 10px;
   margin-top: 30px;
-  border-top: solid,#29353c,10px;
+  border: none;
   color: #aac7d8;
 }
 
-#hackhers-desc{
+#hackhers-desc {
   text-align: left;
   color: #aac7d8;
 }
-
 
 /* Project Buttons */
 
@@ -151,10 +146,10 @@ img {
   background: linear-gradient(#768A96, #394247);
   display: inline-block;
   border-radius: 30px;
+  text-align: center;
   padding: 5px;
   width: 200px;
   max-width: 100%;
-  text-align: center;
   margin-right: 32px;
   margin-left: auto;
   margin-bottom: 15px;
@@ -167,6 +162,32 @@ img {
   background: linear-gradient(#29353c, #111618);
   color: white;
   transform: scale(1.3);
+}
+
+/* Case Study */
+
+.case-study {
+  text-align: center;
+  width: 95%;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #768A96;
+  border: solid #29353c 5px;
+}
+
+.case-study-content {
+  text-align: left;
+  max-width: 100%;
+  background-color: #44576d;
+  padding: 10px;
+  margin-top: 30px;
+  border: none;
+  color: #aac7d8;
+}
+
+.case-study-content p {
+  text-align: left;
+  color: #aac7d8;
 }
 
 /* Links */
@@ -204,9 +225,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
+/* Responsive Layout */
 
 @media (max-width: 768px) {
+
   .main-layout {
     grid-template-columns: 1fr;
   }
@@ -220,37 +242,5 @@ footer a:hover {
   .projects-button {
     margin-right: 0;
   }
+
 }
-
-
-/* Case Study Section */
-
-
-/* Case Study Section */
-
-
-/* Case Study Section */
-
-.case-study {
-  text-align: center;
-  width: 95%;
-  margin: 25px auto;
-  padding: 20px;
-  background-color: #768A96;
-  border: solid #29353c 5px;
-}
-
-.case-study-content {
-  text-align: left;
-  max-width: 100%;
-  background-color: #44576d;
-  padding: 10px;
-  margin-top: 30px;
-  color: #aac7d8;
-}
-
-.case-study-content p {
-  text-align: left;
-  color: #aac7d8;
-}
-
