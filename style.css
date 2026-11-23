@@ -225,6 +225,13 @@ footer a:hover {
   text-decoration: underline;
 }
 
+
+.equityvoice-desc {
+  text-align: left;
+  color: #aac7d8;
+}
+
+
 /* Responsive Layout */
 
 @media (max-width: 768px) {
